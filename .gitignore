@@ -1,0 +1,51 @@
+# ============================================================
+#  绝对不要提交的东西
+#  bili_migrate 里有登录态（Cookies）、浏览历史、歌单数据，
+#  一旦提交就等于公开你的 B站 账号凭据。
+# ============================================================
+
+# 程序的工作目录：含 bili_profile（登录态）、歌单、匹配结果
+bili_migrate/
+
+# 单独列出兜底，防止工作目录被改名或放到别处
+bili_profile/
+playlist.csv
+report.csv
+unmatched.csv
+candidates.json
+up_sign_cache.json
+state.json
+sort_rules.json
+blacklist.txt
+whitelist.txt
+log.txt
+halt_reason.txt
+
+# 记住的窗口设置和上次用的歌单链接
+gui_config.json
+gui_config.json.bak
+
+# 打包中间产物和压缩包
+build/
+dist/
+*.spec
+*.exe
+*.rar
+*.zip
+
+# 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
